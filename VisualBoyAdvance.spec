@@ -1,13 +1,13 @@
 Summary:	One of the most powerful GameBoy Advance Emulators
 Summary(pl):	Jeden z najlepszych emulatorów GameBoya Advance
 Name:		VisualBoyAdvance
-Version:	1.6
+Version:	1.7.1
 Release:	1
 License:	GPL v2
 Group:		Applications/Emulators
-Source0:	http://ep09.pld-linux.org/~djurban/%{name}-%{version}-src.tar.bz2
-# Source0-md5:	f02ea099d3c0f3038ba0b113a22856c6
-URL:		http://vboy.emuhq.com/
+Source0:	http://dl.sourceforge.net/vba/%{name}-src-%{version}.tar.gz
+# Source0-md5:	4147eeac55ecf713397f19eae636eef3
+URL:		http://vba.ngemu.com/
 BuildRequires:	SDL-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
