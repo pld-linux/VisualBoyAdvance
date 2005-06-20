@@ -1,12 +1,13 @@
+%define		_snap	050620
 Summary:	One of the most powerful GameBoy Advance Emulators
 Summary(pl):	Jeden z najlepszych emulatorów GameBoya Advance
 Name:		VisualBoyAdvance
-Version:	1.7.2
-Release:	1
+Version:	1.8.0
+Release:	0.%{_snap}.1
 License:	GPL v2
 Group:		Applications/Emulators
-Source0:	http://dl.sourceforge.net/vba/%{name}-src-%{version}.tar.gz
-# Source0-md5:	cc02339e3fd8efd9f23121b0a2f81fd8
+Source0:	%{name}-%{version}-%{_snap}.tar.bz2
+# Source0-md5:	caac298c7037603709feccd73285d582
 URL:		http://vba.ngemu.com/
 BuildRequires:	SDL-devel
 BuildRequires:	autoconf
@@ -24,7 +25,7 @@ One of the most powerful GameBoy Advance Emulators.
 Jeden z najlepszych emulatorów GameBoya Advance.
 
 %prep
-%setup -q
+%setup -q -n %{name}-%{version}-%{_snap}
 
 %build
 %{__aclocal}
@@ -50,3 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README NEWS
 %attr(755,root,root) %{_bindir}/*
+%attr(640,root,root) %config(noreplace) %verify(not size mtime md5) /etc/VisualBoyAdvance.cfg
