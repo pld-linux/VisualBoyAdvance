@@ -51,4 +51,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README NEWS
 %attr(755,root,root) %{_bindir}/*
-%attr(640,root,root) %config(noreplace) %verify(not size mtime md5) /etc/VisualBoyAdvance.cfg
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/VisualBoyAdvance.cfg
