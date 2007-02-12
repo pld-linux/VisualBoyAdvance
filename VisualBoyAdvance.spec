@@ -1,6 +1,6 @@
 %define		_snap	050620
 Summary:	One of the most powerful GameBoy Advance Emulators
-Summary(pl):	Jeden z najlepszych emulatorów GameBoya Advance
+Summary(pl.UTF-8):   Jeden z najlepszych emulatorÃ³w GameBoya Advance
 Name:		VisualBoyAdvance
 Version:	1.8.0
 Release:	0.%{_snap}.1
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 One of the most powerful GameBoy Advance Emulators.
 
-%description -l pl
-Jeden z najlepszych emulatorów GameBoya Advance.
+%description -l pl.UTF-8
+Jeden z najlepszych emulatorÃ³w GameBoya Advance.
 
 %prep
 %setup -q -n %{name}-%{version}-%{_snap}
